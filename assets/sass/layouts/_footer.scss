@@ -1,0 +1,17 @@
+footer{
+    background: $footer-bg;
+
+    .footer-text{
+        color:$footer-text;
+    }
+    .yellow-color{
+        color:$yellow-color
+    }
+
+    .footer-social-icons{
+        a{
+            cursor: pointer;
+            color:$yellow-color;
+        }
+    }
+}
