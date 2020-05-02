@@ -1,16 +1,30 @@
 var gulp = require("gulp"),
   sass = require("gulp-sass"),
-  autoprefixer = require("gulp-autoprefixer"),
+  gulpautoprefixer = require("gulp-autoprefixer"),
   concat = require("gulp-concat"),
   uglify = require("gulp-uglify"),
   watch = require("gulp-watch"),
   sourcemaps = require("gulp-sourcemaps"),
   connect = require("gulp-connect");
+// var postcss = require("gulp-postcss");
+// var autoprefixer = require("autoprefixer");
 
 var jsInput = {
   js: "assets/js/dev/**/*.js"
 };
 var jsOutput = "assets/js/dist/";
+
+var autoprefixBrowsers = [
+  "> 1%",
+  "last 2 versions",
+  "firefox >= 4",
+  "safari 7",
+  "safari 8",
+  "IE 8",
+  "IE 9",
+  "IE 10",
+  "IE 11"
+];
 
 gulp.task("server", function() {
   connect.server({
@@ -22,17 +36,8 @@ gulp.task("sass", function() {
   return gulp
     .src("assets/sass/**/*.scss")
     .pipe(sourcemaps.init())
-    .pipe(
-      autoprefixer({
-        browsers: ["last 5 versions"],
-        cascade: false
-      })
-    )
-    .pipe(
-      sass({
-        outputStyle: "compressed"
-      }).on("error", sass.logError)
-    )
+    .pipe(gulpautoprefixer("last 2 version"))
+    .pipe(sass().on("error", sass.logError))
     .pipe(sourcemaps.write("./maps"))
     .pipe(gulp.dest("./css"))
     .pipe(connect.reload());

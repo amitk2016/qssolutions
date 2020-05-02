@@ -1,3 +1,36 @@
-body{background:#f6f6f6}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.top-nav {
+  background: #F4F7F8;
+  color: #6E7D8F; }
+
+.header-social-icons a {
+  line-height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #6E7D8F; }
+
+.header-cart a {
+  cursor: pointer;
+  line-height: 40px;
+  display: inline-block;
+  color: #444;
+  font-weight: 500; }
+
+.header-cart i {
+  color: #b8232f; }
+
+.button {
+  padding: 1rem 3rem; }
+
+.button-primary {
+  background: #b8232f;
+  color: white; }
+
+.book-now {
+  padding: 0.625rem 2rem !important;
+  font-weight: 600; }
 
 /*# sourceMappingURL=maps/style.css.map */

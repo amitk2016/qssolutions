@@ -1,0 +1,25 @@
+.top-nav{
+    background:#F4F7F8;
+    color:$text-color;
+}
+
+.header-social-icons{
+  a{
+    line-height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    color:$text-color;
+  }
+}
+.header-cart{
+  a{
+    cursor: pointer;
+    line-height: 40px;
+    display: inline-block;
+    color:#444;
+    font-weight: 500;
+  }
+  i{
+    color:$primary-color;
+  }
+}
