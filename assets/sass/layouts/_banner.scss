@@ -9,3 +9,20 @@
          -o-background-size: cover;
             background-size: cover;
 }
+
+.font-weight-medium{
+    font-weight:600;
+}
+.py-6{
+    padding-top: 4rem !important;
+    padding-bottom:4rem !important;
+}
+.yellow-color{
+    color:$yellow-color
+}
+.text-primary{
+    color:#b8232f !important;
+}
+.bg-light-red{
+    background:#fbeeed;
+}

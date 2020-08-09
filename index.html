@@ -61,23 +61,70 @@
             </div>
 
         </div>
-        <nav class="bg-dark gvr-navbar">
-            <ul class=" justify-content-around d-none d-md-flex m-0 list-inline py-3 ">
+        <nav class="bg-dark gvr-navbar site-navigation">
+            <ul class=" justify-content-around d-flex m-0 list-inline py-3 flex-column flex-lg-row">
                 <li class="list-inline-item"><a href="" class="text-white text-uppercase">Home</a></li>
                 <li class="list-inline-item"><a href="" class="text-white text-uppercase">our railways</a></li>
                 <li class="list-inline-item"><a href="" class="text-white text-uppercase">trip and tours</a></li>
                 <li class="list-inline-item"><a href="" class="text-white text-uppercase">first class</a></li>
                 <li class="list-inline-item"><a href="" class="text-white text-uppercase">join our team</a></li>
                 <li class="list-inline-item"><a href="" class="text-white text-uppercase">contact us</a></li>
+                <i class="fa fa-times fa-lg js-menu-close d-lg-none position-absolute"></i>
             </ul>
-            <i class="fa fa-bars d-block d-md-none text-white py-4"></i>
+            <div class="hamburger-menu js-hamburger-menu d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div><!-- .hamburger-menu -->
         </nav>
 
     </header>
     <div class="banner-background">
 
     </div>
-    <div class="my-5 py-5"></div>
+
+    <div class="container py-6 ">
+        <div class="row">
+            <div class="col-6 col-sm-2 col-md-3 col-lg">
+                <img src="https://picsum.photos/300/200" class="img-fluid rounded shadow-lg" alt="">
+                <h5 class="text-center font-weight-medium pt-3">Steam Train Experience</h5>
+            </div>
+            <div class="col-6 col-sm-2 col-md-3 col-lg">
+                <img src="https://picsum.photos/300/201" class="img-fluid rounded shadow-lg" alt="">
+                <h5 class="text-center font-weight-medium pt-3">First Class Experience</h5>
+            </div>
+            <div class="col-6 col-sm-2 col-md-3 col-lg">
+                <img src="https://picsum.photos/300/202" class="img-fluid rounded shadow-lg" alt="">
+                <h5 class="text-center font-weight-medium pt-3">Mainline Trips</h5>
+            </div>
+            <div class="col-6 col-sm-2 col-md-3 col-lg">
+                <img src="https://picsum.photos/300/203" class="img-fluid rounded shadow-lg" alt="">
+                <h5 class="text-center font-weight-medium pt-3">Shop</h5>
+            </div>
+
+        </div>
+    </div>
+    <div class="container py-5 bg-light-red">
+        <div class="row">
+            <!-- <div class="col-12">
+                <h1 class="font-weight-medium text-center mb-5 text-primary">About us</h2>
+            </div> -->
+        </div>
+        <div class="row">
+
+            <div class="col-6">
+                <img src="https://picsum.photos/600/350" class="img-fluid rounded shadow" alt="">
+            </div>
+            <div class="col-6">
+                <h4 class="font-weight-medium mb-3">The Glenbrook Vintage Railway offers <span class="text-primary">four main experiences, events, and tours</span> </h4 class="font-weight-medium">
+                <p class="mb-3">The Glenbrook Vintage Railway Charitable Trust Board was established by railway enthusiasts (many of which were working for New Zealand Railways at the time) to preserve, rebuild, and operate the old Waiuku Branch Railway between Glenbrook and Waiuku. Over the years, this bunch of passionate volunteers fundraised to acquire locomotives and carriages from around the country, as well as cutting back the gorse that had overgrown the railway line using machetes. </p>
+                <a href="#" class="button button-primary book-now font-weight-bold rounded">Read More</a>
+            </div>
+
+        </div>
+    </div>
+
     <footer class="py-5">
         <div class="container">
             <div class="row">
@@ -171,6 +218,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="assets/js/dist/app.mins.js"></script>
+
+
+    <script type="text/javascript">
+    $(function() {
+
+    $('.js-hamburger-menu').on('click touch', mobileNavVisible);
+
+    $('.js-menu-close').on('click touch', function(){
+        $('.site-navigation ul').removeClass('slideRight');
+    });
+
+
+    function mobileNavVisible(){
+        $('.site-navigation ul').toggleClass('slideRight');
+    }
+
+    });
+
+    </script>
 </body>
 
 </html>
