@@ -114,6 +114,15 @@ footer {
 .bg-light-red {
   background: #fbeeed; }
 
+p {
+  line-height: 1.76; }
+
+p.about-us-home {
+  font-size: 17px; }
+
+.line-height-sm {
+  line-height: 1.4; }
+
 .button {
   padding: 1rem 3rem; }
 
