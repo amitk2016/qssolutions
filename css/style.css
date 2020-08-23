@@ -26,8 +26,28 @@ body {
 .header-cart i {
   color: #b8232f; }
 
+.gvr-navbar ul li {
+  position: relative;
+  padding: 12px 20px;
+  list-style-type: none; }
+
 .gvr-navbar a {
   font-weight: 600; }
+
+.gvr-navbar .submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  background: #343a40;
+  padding-left: 0px;
+  padding-right: 40px; }
+  .gvr-navbar .submenu a {
+    color: white; }
+
+@media only screen and (max-width: 990px) {
+  .gvr-navbar .submenu {
+    position: static; } }
 
 /*
   Hamburger Menu

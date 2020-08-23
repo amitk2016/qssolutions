@@ -24,8 +24,33 @@
   }
 }
 .gvr-navbar{
+    ul{
+        li{
+            position: relative;
+            padding:12px 20px;
+            list-style-type: none;
+        }
+    }
     a{
         font-weight:600;
+    }
+    .submenu {
+    	position: absolute;
+    	left: 0;
+        top: 100%;
+    	display: none;
+    	background: #343a40;
+        padding-left:0px;
+        padding-right:40px;
+        a{
+            color:white;
+        }
+
+    }
+}
+@media only screen and (max-width: 990px) {
+    .gvr-navbar .submenu{
+        position: static;
     }
 }
 
