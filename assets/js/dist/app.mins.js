@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".gvr-navbar>ul>li").click(function(n){n.preventDefault(),$(this).find(".submenu").toggle()})});
