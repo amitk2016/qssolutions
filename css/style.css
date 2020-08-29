@@ -1,64 +1,23 @@
-html, body {
-  position: relative;
-  height: 100%; }
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #fff;
-  margin: 0;
-  padding: 0; }
-
 header {
-  z-index: 20;
-  text-align: center;
-  width: 100%; }
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
+  justify-content: space-between;
+  position: absolute;
+  z-index: 20;
+  background: white;
+  width: 100%;
+  padding: 20px; }
 
-.swiper-pagination-bullet-active {
-  background-color: #fff; }
-
-.color-1 {
-  background-color: #f44336; }
-
-.color-2 {
-  background-color: #E91E63; }
-
-.color-3 {
-  background-color: #9C27B0; }
-
-.color-4 {
-  background-color: #673AB7; }
-
-.color-5 {
-  background-color: #3F51B5; }
-
-.color-6 {
-  background-color: #2196F3; }
+ul#menu {
+  display: flex;
+  margin: 0px;
+  padding: 0px; }
+  ul#menu li {
+    list-style: none;
+    margin: 0px; }
+    ul#menu li a {
+      padding: 15px 40px;
+      margin-left: 20px;
+      color: #364854 !important; }
 
 footer {
   background: #3e3e3e; }
@@ -70,11 +29,94 @@ footer {
     cursor: pointer;
     color: #FAA21B; }
 
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  background: #FFF;
+  background-size: cover; }
+
+/* Section 1
+	 * --------------------------------------- */
+#section1 h1 {
+  color: #444; }
+
+#section1 p {
+  color: #333;
+  color: rgba(0, 0, 0, 0.3); }
+
+#section1 img {
+  margin: 20px 0;
+  opacity: 0.7; }
+
+/* Section 2
+	 * --------------------------------------- */
+#section2 h1,
+#section2 p {
+  z-index: 3; }
+
+#section2 p {
+  opacity: 0.8; }
+
+#section2 #colors {
+  right: 60px;
+  bottom: 0;
+  position: absolute;
+  height: 413px;
+  width: 258px;
+  background-image: url(imgs/colors.gif);
+  background-repeat: no-repeat; }
+
+/* Section 3
+	 * --------------------------------------- */
+#section3 #colors {
+  left: 60px;
+  bottom: 0; }
+
+#section3 p {
+  color: #757575; }
+
+#colors2,
+#colors3 {
+  position: absolute;
+  height: 163px;
+  width: 362px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  left: 0;
+  margin: 0 auto;
+  right: 0; }
+
+#colors2 {
+  background-image: url(imgs/colors2.gif);
+  top: 0; }
+
+#colors3 {
+  background-image: url(imgs/colors3.gif);
+  bottom: 0; }
+
+/* Section 4
+	 * --------------------------------------- */
+#section4 p {
+  opacity: 0.6; }
+
+/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+#pp-nav.custom .pp-tooltip {
+  color: #AAA; }
+
+#markup {
+  display: block;
+  width: 450px;
+  margin: 20px auto;
+  text-align: left; }
+
 .button {
   padding: 1rem 3rem; }
 
 .button-primary {
-  background: #b8232f;
+  background: #ff5e13;
   color: white; }
 
 .book-now {
